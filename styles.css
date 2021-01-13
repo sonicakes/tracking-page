@@ -1,0 +1,56 @@
+body {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+}
+
+.menu {
+  display: flex;
+  margin-top: 50px;
+}
+.menu__item {
+  text-transform: uppercase;
+  margin-right: 50px;
+  font-weight: 700;
+  font-family: "Barlow Condensed", sans-serif;
+}
+.menu__item.logo {
+  margin-right: auto;
+}
+
+.btn,
+h1 {
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+main {
+  display: flex;
+}
+main .img {
+  position: relative;
+  left: 255px;
+}
+
+/*# sourceMappingURL=styles.css.map */
