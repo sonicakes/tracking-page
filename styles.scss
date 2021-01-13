@@ -5,7 +5,12 @@ body {
 
 .menu {
   display: flex;
+  flex-direction: column;
   margin-top: 50px;
+
+  @media (min-width: 768px) {
+   flex-direction: row;
+  }
 
   &__item {
     text-transform: uppercase;
@@ -24,6 +29,27 @@ body {
 h1 {
   font-family: "Barlow Condensed", sans-serif;
   text-transform: uppercase;
+}
+
+.btn {
+
+        .btn-span {
+            background: hsl(0, 100%, 68%);
+            padding: 12px;
+            border-radius: 10px;
+        }
+
+        .second-title {
+            letter-spacing: 3px;
+        }
+
+    &--new {
+        .btn-span {
+            background: hsl(230, 29%, 20%);
+            color: #fff;
+
+        }
+    }
 }
 
 .container {
@@ -47,9 +73,12 @@ main {
   display: flex;
 
   .img {
-    position: relative;
-    left: 255px;
     z-index: 2;
+    width: 50%;
+  }
+
+  .info {
+      width: 50%;
   }
 }
 .shape {
@@ -59,7 +88,15 @@ main {
     border-radius: 0 0 0 40px;
     position: absolute;
     top: 0;
-    left: 40%;
+    left: 50%;
     z-index: 1;
+  }
+
+  .menu-toggler {
+      display: block;
+
+    @media (min-width: 768px) {
+        display: none;
+      }
   }
  

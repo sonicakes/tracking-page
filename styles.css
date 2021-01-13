@@ -5,7 +5,13 @@ body {
 
 .menu {
   display: flex;
+  flex-direction: column;
   margin-top: 50px;
+}
+@media (min-width: 768px) {
+  .menu {
+    flex-direction: row;
+  }
 }
 .menu__item {
   text-transform: uppercase;
@@ -22,6 +28,19 @@ body {
 h1 {
   font-family: "Barlow Condensed", sans-serif;
   text-transform: uppercase;
+}
+
+.btn .btn-span {
+  background: #ff5c5c;
+  padding: 12px;
+  border-radius: 10px;
+}
+.btn .second-title {
+  letter-spacing: 3px;
+}
+.btn--new .btn-span {
+  background: #242942;
+  color: #fff;
 }
 
 .container {
@@ -50,9 +69,11 @@ main {
   display: flex;
 }
 main .img {
-  position: relative;
-  left: 255px;
   z-index: 2;
+  width: 50%;
+}
+main .info {
+  width: 50%;
 }
 
 .shape {
@@ -62,8 +83,17 @@ main .img {
   border-radius: 0 0 0 40px;
   position: absolute;
   top: 0;
-  left: 40%;
+  left: 50%;
   z-index: 1;
+}
+
+.menu-toggler {
+  display: block;
+}
+@media (min-width: 768px) {
+  .menu-toggler {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
